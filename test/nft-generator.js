@@ -85,4 +85,15 @@ describe("NameGenerator", async () => {
 			expect(await this.contract.tokenURI("0")).not.equal("");
 		});
 	});
+
+	describe("withdraw()", () => {
+		beforeEach(async () => {
+			await this.contract.connect(user1).mint({ value: Fee });
+		});
+
+		it("should withdraw ETH from contract", async () => {
+			expect((await this.contract.connect(deployer).withdraw(Fee)).hash).not
+				.null;
+		});
+	});
 });
