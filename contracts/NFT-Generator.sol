@@ -9,7 +9,6 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol";
 import "./utils/Base64.sol";
 import "./utils/Names.sol";
-import "hardhat/console.sol";
 
 contract NameGenerator is ERC721, ERC721URIStorage, Names, Ownable {
     using Counters for Counters.Counter;
@@ -65,7 +64,6 @@ contract NameGenerator is ERC721, ERC721URIStorage, Names, Ownable {
         );
 
         output = string(abi.encodePacked("data:application/json;base64,", json));
-        console.log("Name %s", output);
         return output;
     }
 
@@ -96,7 +94,6 @@ contract NameGenerator is ERC721, ERC721URIStorage, Names, Ownable {
                 _nameLists[_randomID[1]]
             )
         );
-        console.log("Random name generated: %s", _random);
         return _random;
     }
 

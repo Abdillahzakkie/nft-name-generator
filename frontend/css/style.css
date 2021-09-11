@@ -1,0 +1,193 @@
+/* PP */
+body {
+	padding: 0;
+	font-family: "minecraftregular";
+	word-break: keep-all;
+	background-image: url(../images/bg_m.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #000;
+	height: 100%;
+}
+
+@font-face {
+	font-family: "minecraftbold";
+	src: url("../fonts/minecraft-bold.woff2") format("woff2"),
+		url("../fonts/minecraft-bold.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "minecraftbold_italic";
+	src: url("../fonts/minecraft-bolditalic.woff2") format("woff2"),
+		url("../fonts/minecraft-bolditalic.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "minecraftitalic";
+	src: url("../fonts/minecraft-italic.woff2") format("woff2"),
+		url("../fonts/minecraft-italic.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "minecraftregular";
+	src: url("../fonts/minecraft-regular.woff2") format("woff2"),
+		url("../fonts/minecraft-regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+ul li {
+	list-style: none;
+}
+* {
+	padding: 0px;
+	margin: 0px;
+}
+a {
+	text-decoration: none;
+	outline: none;
+	color: #666;
+}
+a:hover {
+	text-decoration: none;
+	outline: none;
+}
+#un,
+#ps {
+	color: gray;
+}
+.clr {
+	clear: both;
+}
+
+header nav {
+	width: 100%;
+	text-align: center;
+	padding-top: 34px;
+}
+header nav li {
+	display: inline-block;
+}
+header nav li a {
+	font-size: 17px;
+	color: #fff;
+	padding: 3px 15px;
+}
+
+.name-gen_hadding_mid_gm {
+	padding-top: 100px;
+	text-align: center;
+}
+.name-gen_hadding_mid_gm h1 {
+	color: #66ff80;
+	font-size: 140px;
+}
+
+.name-gen_hadding_mid_gm p {
+	color: #b6b6b6;
+	font-size: 15px;
+	padding: 1% 15%;
+}
+
+.name-gen_hadding_mid_gm h5 a {
+	font-size: 15px;
+	padding: 15px 21px;
+	border: 1px solid #66ff80;
+	display: inline-block;
+	color: #66ff80;
+}
+
+/* name-gen Newly Created NFT display layout */
+.name-gen-images {
+	width: 250px;
+	height: 250px;
+	margin: 4em auto auto;
+}
+
+/* name-gen Token Information display */
+.name-gen-nftData {
+	width: 60%;
+	height: 500px;
+	margin: 4em auto;
+	/* background: #b6b6b6; */
+	color: #66ff80;
+	padding: 1em 2em;
+}
+
+.name-gen-nftData h3 {
+	letter-spacing: 3px;
+}
+
+.name-gen-nftData form {
+	background: none;
+	outline: none;
+	border: none;
+	height: auto;
+	margin: 0 auto 2em;
+}
+
+.name-gen-nftData form input {
+	width: 60%;
+	height: 50px;
+	border: none;
+	border-radius: 1em;
+	outline: none;
+	border: none;
+	padding: 0 1em;
+	letter-spacing: 3px;
+}
+
+.name-gen-nftData .nft-data {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: auto;
+	background: #66ff80;
+	color: #fff;
+	grid-gap: 0 1em;
+}
+
+.name-gen-nftData .nft-data section {
+	width: 100%;
+	place-items: start;
+	padding: 2em;
+}
+
+.name-gen-nftData .nft-data .sec-2 img {
+	display: grid;
+	place-self: end;
+	width: 150px;
+	height: 150%;
+}
+
+@media (max-width: 767px) {
+	.name-gen_hadding_mid_gm h1 {
+		font-size: 94px;
+	}
+
+	.name-gen_hadding_mid_gm p {
+		color: #b6b6b6;
+		font-size: 13px;
+		padding: 1% 7%;
+	}
+	.name-gen_hadding_mid_gm h5 {
+		padding-top: 20px;
+		padding-bottom: 30px;
+	}
+
+	.name-gen_hadding_mid_gm {
+		padding-top: 20px;
+		text-align: center;
+	}
+
+	header nav li a {
+		font-size: 12px;
+		padding: 6px 11px;
+		display: inline-block;
+	}
+}
