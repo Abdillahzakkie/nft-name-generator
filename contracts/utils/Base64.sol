@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 /// [MIT License]
 /// @title Base64
 /// @notice Provides a function for encoding some bytes in base64
